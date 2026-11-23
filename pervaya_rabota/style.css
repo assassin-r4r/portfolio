@@ -1,0 +1,14 @@
+/* это комментарий */
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: chocolate;
+}
+
+img {
+    border: 2px solid blue;
+    border-radius: 50px;
+}

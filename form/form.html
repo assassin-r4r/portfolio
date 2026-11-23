@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+
+<body>
+    <style>
+        fieldset {
+            background-color: bisque;
+        }
+    </style>
+    <h1>Анкета посетителя</h1>
+
+
+    <!-- Формы - инструмент сбора данных от пользователя -->
+
+
+    <form action="">
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <label for="name">Имя <em>*</em></label>
+            <input type="text" name="name" id="name" required>
+            <p>
+                <label for="phone">Телефон</label>
+                <input type="phone" name="phone" id="phone">
+            </p>
+
+            <p>
+                <label for="email">Почта</label>
+                <input type="email" name="email" id="email">
+            </p>
+
+            <p>
+                <label for="date">Дата посещения</label>
+                <input type="date" name="date" id="date">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <p><label for="age">Возраст</label>
+                <input type="number" name="age" id="age" min="1" max="120">
+            </p>
+
+            <p><label for="favourite">Любимая кухня</label>
+                <select name="" id="favourite">
+                    <option value="" selected>Выберите кухню</option>
+                    <option value="rus">Русская</option>
+                    <option value="jap">Японская</option>
+                    <option value="china">Китайская</option>
+                </select>
+            </p>
+            <p><textarea name="wish" id="wish" cols="30" rows="2"></textarea>
+                text
+            </p>
+        
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Оценка нашего заведения</legend>
+            <p>Почему вы выбрали наше заведение?</p>
+            <p>
+                <label for="radio">
+                    <input type="radio"> Вкусная еда
+                </label>
+                
+            </p>
+
+            <p>
+                <label for="radio">
+                    <input type="radio"> Вежливый персонал
+                </label>
+                
+            </p>
+        </fieldset>
+
+
+
+        <p>
+            <input type="submit" value="Отправить анкету">
+        </p>
+
+
+
+    </form>
+</body>
+
+</html>
